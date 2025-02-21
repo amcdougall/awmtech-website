@@ -7,3 +7,8 @@ Deploying this into Pages in GitHub
 
   Next check the Github Pages page to see if the settings are still good. 
   Next check the Web-Page out and see if it has launched.
+
+package.json file
+  Need to add homepage to the first line: "homepage": "https://amcdougall.github.io/awmtech-website"
+  Next make sure predeploy and deploy is setup as well under scripts - "predeploy": "vite preview", "deploy": "gh-pages -d dist"
+  Also under devDependencies make sure that gh-pages - "gh-pages": "^6.3.0"
