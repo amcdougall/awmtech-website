@@ -12,3 +12,7 @@ package.json file
   Need to add homepage to the first line: "homepage": "https://amcdougall.github.io/awmtech-website"
   Next make sure predeploy and deploy is setup as well under scripts - "predeploy": "vite preview", "deploy": "gh-pages -d dist"
   Also under devDependencies make sure that gh-pages - "gh-pages": "^6.3.0"
+
+
+
+If getting stuck on vite versions make sure to run npm install to get that worked out.
