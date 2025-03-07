@@ -1,8 +1,8 @@
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Rss } from 'lucide-react';
 import { FusionLogo } from '../components/FusionLogo';
 
-export default function About() {
+export default function Blog() {
   return (
     <div className="min-h-screen bg-white">
       <nav className="bg-gray-900">
@@ -24,22 +24,49 @@ export default function About() {
 
       <main className="py-20">
         <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto">
-            <h1 className="text-4xl font-bold mb-8">Who We Are</h1>
-            <div className="bg-gray-50 p-8 rounded-lg shadow-lg">
-              <p className="text-gray-700 text-lg mb-6">
-                We are a forward-thinking technology company dedicated to helping business navigate the complexities of digital transformation. With years of experience, we deliver innovative solutions that drive growth and efficiency.
-              </p>
-              <p className="text-gray-700 text-lg mb-8">
-                Get in touch today to discuss how we can provide tailored solutions to drive your business forward.
-              </p>
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center justify-between mb-12">
+              <h1 className="text-4xl font-bold">AWM Technologies Blog</h1>
               <a 
-                href="/#contact"
-                className="inline-flex items-center space-x-2 text-black hover:text-gray-600 transition"
+                href="/rss.xml" 
+                className="flex items-center space-x-2 text-gray-600 hover:text-black transition"
               >
-                <span>Contact Us</span>
-                <ArrowRight size={20} />
+                <Rss size={20} />
+                <span>RSS Feed</span>
               </a>
+            </div>
+
+            <div className="flex space-x-8 mb-12">
+              <a 
+                href="#all-posts"
+                className="text-lg font-semibold text-gray-900 hover:text-blue-600 transition border-b-2 border-black"
+              >
+                All Posts
+              </a>
+              <a 
+                href="#news-events"
+                className="text-lg font-semibold text-gray-600 hover:text-blue-600 transition"
+              >
+                News and Events
+              </a>
+            </div>
+
+            <div className="space-y-12">
+              {/* Placeholder for blog posts - you can replace this with actual content */}
+              <div className="bg-gray-50 p-8 rounded-lg shadow-lg">
+                <p className="text-gray-500 mb-2">March 15, 2024</p>
+                <h2 className="text-2xl font-bold mb-4">Latest Innovations in Digital Transformation</h2>
+                <p className="text-gray-700 mb-4">
+                  Discover how businesses are leveraging cutting-edge technologies to transform their operations and drive growth.
+                </p>
+                <a 
+                  href="#read-more"
+                  className="inline-flex items-center space-x-2 text-blue-600 hover:text-blue-800 transition"
+                >
+                  <span>Read More</span>
+                  <ArrowRight size={20} />
+                </a>
+              </div>
             </div>
           </div>
         </div>
