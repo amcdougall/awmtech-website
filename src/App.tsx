@@ -293,19 +293,19 @@ function App() {
             <div>
               <h4 className="font-bold mb-4">Company</h4>
               <ul className="space-y-2 text-gray-400">
-                <li>About Us</li>
+                <li><a href="/about" className="hover:text-white transition">About Us</a></li>
                 <li>Careers</li>
-                <li>News</li>
-                <li>Contact</li>
+                <li><a href="/blog" className="hover:text-white transition">News</a></li>
+                <li><a href="/#contact" className="hover:text-white transition">Contact</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-bold mb-4">Connect</h4>
+              <h4 className="font-bold mb-4">Follow Us</h4>
               <ul className="space-y-2 text-gray-400">
-                <li>LinkedIn</li>
-                <li>Twitter</li>
-                <li>Facebook</li>
-                <li>Instagram</li>
+                <li><a href="#linkedin" className="hover:text-white transition">LinkedIn</a></li>
+                <li><a href="#twitter" className="hover:text-white transition">Twitter</a></li>
+                <li><a href="#facebook" className="hover:text-white transition">Facebook</a></li>
+                <li><a href="#instagram" className="hover:text-white transition">Instagram</a></li>
               </ul>
             </div>
           </div>
